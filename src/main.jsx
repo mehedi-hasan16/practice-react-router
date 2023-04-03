@@ -11,6 +11,7 @@ import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import Friends from './components/Friends/Friends';
 import FriendDetalis from './components/FriendDetails/FriendDetalis';
+import NotFound from './components/NotFound/NotFound';
 
 // const router = createBrowserRouter([
 //   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact></Contact>,
+      },
+      {
+        path: '*',
+        element: <NotFound></NotFound>,
       },
     ],
   },
