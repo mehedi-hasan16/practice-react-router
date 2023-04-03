@@ -1,14 +1,15 @@
 import React from 'react';
 import './Header.css'
 import { Link } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
     return (
         <div className='nav-bar'>
-            < Link to='/'>Home</Link>
-            < Link to='/blog'>Blog</Link>
-            < Link to='/friends'>Friends</Link>
-            < Link to='/contact'>Contact</Link>
+            < ActiveLink to='/'>Home</ActiveLink>
+            < ActiveLink to='/blog'>Blog</ActiveLink>
+            < ActiveLink to='/friends'>Friends</ActiveLink>
+            < ActiveLink to='/contact'>Contact</ActiveLink>
         </div>
     );
 };
